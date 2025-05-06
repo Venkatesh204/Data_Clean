@@ -1,0 +1,11 @@
+ID,First Name,Last Name,Email,Phone Number,Company Name,Address,Join Date,Value,Notes
+1, John ,Doe,john.doe@example.com, 9876543210 , Alpha Inc. , " 123 Main St, Anytown ",2023-01-15,100.5,"Needs follow-up"
+2,Jane, Smith , JANE.SMITH@DOMAIN.NET ,+91 8765432109, Beta Corp ,456 Oak Ave, Anytown,1/20/2023,250,
+3,Bob,Johnson,bob@invalid format,777invalid, Gamma LLC , 789 Pine Ln ,2023/02/10,50.75,Duplicate Entry
+4,Alice,Williams,alice.w@example.co, 9988776655 , Delta Solutions ," 101 Maple Dr, Sometown",2023-02-28,,"Missing value here"
+5, John ,Doe,john.doe@example.com, 9876543210 , Alpha Inc. , " 123 Main St, Anytown ",2023-01-15,100.5,"Duplicate of row 1"
+6,Charlie,Brown,charlie@email.com, 6543210987, , ,2023-03-10,300,Missing company/person info
+7,Diana,Prince,diana@Themyscira.org, 9876543210 ,Stark Industries, 1 Avengers Tower, 2023-04-01, 1000, "Duplicate Phone of Row 1"
+8,Peter,Parker,peter.parker@mymail#com, 5551234567, Daily Bugle, , 2023/05/05, 75.2, Invalid email format
+9, , , missing@example.com, 9112223333, Epsilon Group, 222 Second St, 2023-06-15, 120, Missing names
+10,Test, User , test@test.com, 8888888888 , Test Co., test address, unknown date, 10, Invalid date

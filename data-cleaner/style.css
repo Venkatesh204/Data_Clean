@@ -1,0 +1,101 @@
+/* --- Overall & Body --- */
+body, .gradio-container {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: linear-gradient(135deg, #eef2f7 0%, #f8f9fa 100%) !important;
+    background-attachment: fixed !important;
+    color: #343a40; /* Default text color */
+}
+h1, h2, h3, h4, h5, h6 { color: #0056b3; font-weight: 600; margin-bottom: 0.75em; }
+h1 { text-align: center; margin-top: 1em; margin-bottom: 1em; }
+label > .label-text { font-weight: 500 !important; font-size: 1.0em !important; color: #495057 !important; margin-bottom: 5px !important; display: block !important; }
+.gr-info { color: #6c757d !important; font-size: 0.85em !important; font-style: italic; margin-top: -3px; margin-bottom: 8px; }
+.gr-input, .gr-output, .gr-interface > .panel { /* General component styling */
+    border-radius: 8px !important;
+    border: 1px solid #dee2e6 !important;
+    background-color: #ffffff !important;
+    box-shadow: 0 2px 4px rgba(0, 83, 156, 0.08) !important;
+    padding: 18px !important;
+    margin-bottom: 15px !important;
+}
+.gr-form { /* Remove default borders around inputs inside forms */
+   border: none !important; padding: 0 !important; margin: 0 !important; box-shadow: none !important; background: transparent !important;
+}
+/* --- Buttons --- */
+.gr-button {
+    border-radius: 25px !important; padding: 10px 22px !important; font-weight: 600 !important;
+    transition: all 0.25s ease !important; margin: 5px !important; border: 1px solid transparent !important;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1) !important; text-transform: uppercase; font-size: 0.9em !important; letter-spacing: 0.5px;
+    cursor: pointer; /* Ensure cursor changes on hover */
+}
+.gr-button-primary { /* Process button */
+    background: linear-gradient(to right, #007bff, #0056b3) !important; color: white !important; border-color: #0056b3 !important;
+}
+.gr-button-primary:hover { box-shadow: 0 5px 10px rgba(0, 86, 179, 0.3) !important; transform: translateY(-2px) !important; }
+#reset-button { /* Reset button */
+    background: linear-gradient(to right, #dc3545, #b02a37) !important; color: white !important; border-color: #b02a37 !important;
+}
+#reset-button:hover { box-shadow: 0 5px 10px rgba(176, 42, 55, 0.3) !important; transform: translateY(-2px) !important; }
+#hide-results-button { /* Hide button */
+    background: linear-gradient(to right, #6c757d, #495057) !important; color: white !important; border-color: #495057 !important;
+}
+#hide-results-button:hover { box-shadow: 0 5px 10px rgba(73, 80, 87, 0.3) !important; transform: translateY(-2px) !important; }
+/* --- Tabs --- */
+.tab-nav button { /* Tab buttons */
+    background: #e9ecef !important; color: #6c757d !important; border: 1px solid #dee2e6 !important; border-bottom: none !important;
+    border-radius: 8px 8px 0 0 !important; padding: 12px 20px !important; margin-right: 5px !important;
+    font-weight: 500 !important; transition: background-color 0.2s ease, color 0.2s ease !important; position: relative; top: 1px;
+    font-size: 0.95em !important;
+}
+.tab-nav button.selected { /* Selected tab button */
+    background: #ffffff !important; color: #007bff !important; border-color: #dee2e6 !important; border-bottom: 2px solid #ffffff !important;
+    font-weight: 600 !important;
+}
+.tabitem { /* Tab content area */
+    border: 1px solid #dee2e6 !important; border-top: none !important; padding: 25px !important;
+    background-color: #ffffff !important; border-radius: 0 0 8px 8px !important; box-shadow: 0 3px 6px rgba(0, 83, 156, 0.06) !important;
+    margin-top: -1px; /* Align with tab buttons */
+}
+/* --- Specific Components --- */
+.gr-file { border: 2px dashed #007bff !important; background-color: #f8f9fa !important; padding: 25px !important; text-align: center; transition: background-color 0.2s ease; }
+.gr-file:hover { background-color: #eef2f7 !important; }
+.gr-dataframe { /* Dataframe styling */
+    border-radius: 6px !important; overflow: auto; border: 1px solid #ced4da !important; /* Added overflow auto */
+    max-height: 400px; /* Limit height for large previews */
+}
+.gr-dataframe table thead th { background-color: #e9ecef !important; font-weight: 600 !important; color: #495057 !important; font-size: 0.9em !important; position: sticky; top: 0; /* Sticky header */ }
+.gr-dataframe table tbody tr:nth-child(even) { background-color: #f8f9fa !important; }
+.gr-plot { /* Plot styling */
+    border: 1px solid #e0e0e0; border-radius: 6px; padding: 10px; background-color: #fdfdfd; margin-bottom: 15px;
+    display: flex; /* Center plot content */
+    justify-content: center;
+    align-items: center;
+    min-height: 250px; /* Ensure placeholder text is visible */
+}
+#status-textbox textarea { /* Status/Log Textbox */
+    border-radius: 6px !important; border: 1px solid #adb5bd !important;
+    background-color: #e9ecef !important; color: #495057 !important;
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;
+    font-size: 0.88em !important; line-height: 1.5 !important; padding: 12px !important;
+}
+#profile-display { /* Profile Markdown */
+    padding: 15px; background-color: #f8f9fa !important; border-radius: 6px; margin-top: 10px; border: 1px solid #dee2e6 !important;
+    font-size: 0.95em; line-height: 1.6; overflow-wrap: break-word; /* Wrap long lines */
+}
+#profile-display h3 { color: #0056b3 !important; margin-top: 0.5em; margin-bottom: 0.5em; font-size: 1.1em; border-bottom: 1px solid #ced4da; padding-bottom: 5px;}
+#profile-display p { margin-bottom: 5px; } #profile-display strong { color: #343a40; }
+#profile-display pre { background-color: #e9ecef !important; padding: 12px; border-radius: 4px; border: 1px solid #ced4da !important; color: #343a40 !important; overflow-x: auto; font-size: 0.85em; }
+.gr-group { /* Groups in Config Tab */
+   border: 1px solid #e9ecef !important; border-radius: 8px !important; padding: 20px !important; margin-bottom: 20px !important; background-color: #fdfdfd !important;
+}
+.gr-group h4 { margin-top: 0; margin-bottom: 15px; color: #007bff; border-bottom: 1px solid #dee2e6; padding-bottom: 8px; font-size: 1.1em; }
+.gr-checkboxgroup, .gr-radio { background-color: transparent !important; border: none !important; padding: 0 !important; } /* Remove background from choice groups */
+.checkbox-group label span, .radio-group label span { font-size: 0.98em !important; font-weight: normal !important; color: #343a40 !important; margin-left: 5px; }
+.gr-accordion > button { background-color: #e9ecef !important; color: #495057 !important; font-weight: 500 !important; border-radius: 6px !important; margin-bottom: 5px; border: 1px solid #ced4da !important; }
+.gr-accordion > div { border-radius: 6px !important; border: 1px solid #ced4da !important; padding: 15px !important; background-color: #f8f9fa !important; }
+#download-links a.gr-button { /* Style download buttons */
+    margin-right: 10px !important; margin-bottom: 10px !important; font-size: 0.85em !important;
+    padding: 8px 18px !important; display: inline-block; /* Make them wrap nicely */
+    text-decoration: none !important; /* Remove underline */
+}
+footer { display: none !important; } /* Hide default Gradio footer */
+#app-footer { text-align:center; color: #6c757d; font-size: 0.9em; margin-top: 30px; padding-bottom: 15px; }
